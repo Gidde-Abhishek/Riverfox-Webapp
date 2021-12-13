@@ -159,6 +159,7 @@ nav {
   color: black;
   background-color: #ffd74a;
   border: 2px solid #ffd74a;
+  animation: bounce 1000ms ease infinite;
 }
 
 .ghost-btn {
@@ -169,4 +170,17 @@ nav {
 
 .ghost-btn:hover {
   color: black;
+}
+
+/* write a css keyframes animation for a bouncing button */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
